@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "AliButton.h"
+#import "Circle.h"
+#import "Square.h"
 
 @interface ViewController ()
 
@@ -14,9 +17,38 @@
 
 @implementation ViewController
 
+AliButton *a;
+AliButton *b;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    a = [[AliButton alloc] initWithFrame:CGRectMake(0,0,50,50)];
+//    [self.view addSubview:a];
+    
+    b = [[AliButton alloc] initWithFrame:CGRectMake(0,100,50,50)];
+//    [self.view addSubview:b];
+    
+    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(afterSoemTime) userInfo:nil repeats:NO];
+    
+    
+    
+    Square *s = [[Square alloc] initWithLength:200 andWidth:50 andColor:[UIColor blueColor]];
+    [self.view addSubview:s];
+    
+    Circle *c = [[Circle alloc] initWithRadius:30 andColor:[UIColor redColor]];
+    [self.view addSubview:c];
+    
+    [s toGreen];
+    [c toGreen];
+    
+    
+}
+
+-(void)afterSoemTime {
+    [a aliify];
+    [b aliify];
 }
 
 - (void)didReceiveMemoryWarning {

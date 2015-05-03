@@ -14,6 +14,10 @@
 		7E5F09DD1AF54D5E0040D9DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5F09DC1AF54D5E0040D9DF /* Images.xcassets */; };
 		7E5F09E01AF54D5E0040D9DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5F09DE1AF54D5E0040D9DF /* LaunchScreen.xib */; };
 		7E5F09EC1AF54D5F0040D9DF /* AliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F09EB1AF54D5F0040D9DF /* AliTests.m */; };
+		7E5F09F71AF54EF30040D9DF /* AliButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F09F61AF54EF30040D9DF /* AliButton.m */; };
+		7E5F09FA1AF553990040D9DF /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F09F91AF553990040D9DF /* Circle.m */; };
+		7E5F09FD1AF5549B0040D9DF /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F09FC1AF5549B0040D9DF /* Square.m */; };
+		7E5F0A001AF556720040D9DF /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F09FF1AF556720040D9DF /* Shape.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		7E5F09E51AF54D5F0040D9DF /* AliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5F09EA1AF54D5F0040D9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E5F09EB1AF54D5F0040D9DF /* AliTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliTests.m; sourceTree = "<group>"; };
+		7E5F09F51AF54EF30040D9DF /* AliButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliButton.h; sourceTree = "<group>"; };
+		7E5F09F61AF54EF30040D9DF /* AliButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliButton.m; sourceTree = "<group>"; };
+		7E5F09F81AF553990040D9DF /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		7E5F09F91AF553990040D9DF /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		7E5F09FB1AF5549B0040D9DF /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		7E5F09FC1AF5549B0040D9DF /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		7E5F09FE1AF556720040D9DF /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		7E5F09FF1AF556720040D9DF /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +93,18 @@
 		7E5F09CE1AF54D5E0040D9DF /* Ali */ = {
 			isa = PBXGroup;
 			children = (
+				7E5F09F51AF54EF30040D9DF /* AliButton.h */,
+				7E5F09F61AF54EF30040D9DF /* AliButton.m */,
 				7E5F09D31AF54D5E0040D9DF /* AppDelegate.h */,
 				7E5F09D41AF54D5E0040D9DF /* AppDelegate.m */,
 				7E5F09D61AF54D5E0040D9DF /* ViewController.h */,
 				7E5F09D71AF54D5E0040D9DF /* ViewController.m */,
+				7E5F09FB1AF5549B0040D9DF /* Square.h */,
+				7E5F09FC1AF5549B0040D9DF /* Square.m */,
+				7E5F09F81AF553990040D9DF /* Circle.h */,
+				7E5F09F91AF553990040D9DF /* Circle.m */,
+				7E5F09FE1AF556720040D9DF /* Shape.h */,
+				7E5F09FF1AF556720040D9DF /* Shape.m */,
 				7E5F09D91AF54D5E0040D9DF /* Main.storyboard */,
 				7E5F09DC1AF54D5E0040D9DF /* Images.xcassets */,
 				7E5F09DE1AF54D5E0040D9DF /* LaunchScreen.xib */,
@@ -219,9 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5F09FD1AF5549B0040D9DF /* Square.m in Sources */,
+				7E5F09F71AF54EF30040D9DF /* AliButton.m in Sources */,
 				7E5F09D81AF54D5E0040D9DF /* ViewController.m in Sources */,
+				7E5F09FA1AF553990040D9DF /* Circle.m in Sources */,
 				7E5F09D51AF54D5E0040D9DF /* AppDelegate.m in Sources */,
 				7E5F09D21AF54D5E0040D9DF /* main.m in Sources */,
+				7E5F0A001AF556720040D9DF /* Shape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
